@@ -31,6 +31,7 @@ public class ProductService {
 			 po.setProductId(p.getProductId());
 			 po.setAvailableQuantity(p.getQuantity());
 			 po.setPrice(p.getPrice());
+			 po.setProductName(p.getProductName());
 			 productList.add(po);
 		 }
 		return productList;
@@ -49,6 +50,7 @@ public class ProductService {
 			product.setProductId(productEntity.getProductId());
 			product.setAvailableQuantity(productEntity.getQuantity());
 			product.setPrice(productEntity.getPrice());
+			product.setProductName(productEntity.getProductName());
 			return product;
 		}
 		catch(Exception e)
