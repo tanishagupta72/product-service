@@ -42,7 +42,7 @@ public class ProductServiceController {
 	@PostMapping("/insertProduct")
 	public ResponseEntity<?> insert(@RequestBody InsertProductRequestBody request)
 	{
-		ProductObject po = productService.insertProduct(request);
+		List<ProductObject> po = productService.insertProduct(request);
 		return ResponseEntity.status(HttpStatus.OK).body(po);
 	}
 }

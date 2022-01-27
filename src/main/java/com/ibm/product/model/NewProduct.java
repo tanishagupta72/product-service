@@ -11,25 +11,24 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class ProductObject {
+public class NewProduct {
 
 
-	@JsonProperty("ProductId")
-	private int productId;
+
 	
 	@JsonProperty("ProductName")
 	private String productName;
 	
-	@JsonProperty("AvailableQuantity")
-	private int availableQuantity;
+	@JsonProperty("Manufacturer")
+	private String manufacturer;
 	
+
 	@JsonProperty("Price")
 	private double price;
 	
-	
+	@JsonProperty("Quantity")
+	private int quantity;
 
-	
-	
 	
 	
 	
